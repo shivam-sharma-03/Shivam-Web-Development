@@ -1,7 +1,19 @@
-import type { NextConfig } from "next";
+// next.config.ts
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
 };
 
-export default nextConfig;
+const isBundleAnalyzerEnabled = process.env.ANALYZE === 'true';
+
+let config = nextConfig;
+
+if (isBundleAnalyzerEnabled) {
+  
+  const withBundleAnalyzer = require('@next/bundle-analyzer')({
+    enabled: true, // It's true because the outer condition already checked it
+  });
+  config = withBundleAnalyzer(config);
+}
+
+module.exports = config;
