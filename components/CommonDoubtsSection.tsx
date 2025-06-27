@@ -159,7 +159,7 @@ const CommonDoubtsSection: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-12"
         >
-          <p className="text-xl text-gray-200 mb-6">Still got doubts? I&apos;m here to help!</p> {/* FIXED */}
+          <p className="text-xl text-gray-200 mb-6">Still got doubts? I&apos;m here to help!</p> 
           <a
             href="#contact"
             className="inline-block bg-[#892CDC] text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-[#700B97] transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#892CDC]/50"
@@ -171,5 +171,6 @@ const CommonDoubtsSection: React.FC = () => {
     </motion.section>
   );
 };
+
 
 export default CommonDoubtsSection;

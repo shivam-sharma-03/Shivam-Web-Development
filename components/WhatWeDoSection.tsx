@@ -53,7 +53,7 @@ const WhatWeDoSection: React.FC = () => {
               Elevating Businesses with <span className="text-[#892CDC]">Impactful Websites.</span>
             </h2>
             <p className="text-lg md:text-xl leading-relaxed mb-6">
-              In today&apos;s digital landscape, a powerful online presence is non-negotiable. I help small businesses like yours {/* FIXED */}
+              In today&apos;s digital landscape, a powerful online presence is non-negotiable. I help small businesses like yours
               cut through the noise with stunning, highly functional websites designed to
               **attract, engage, and convert.**
             </p>

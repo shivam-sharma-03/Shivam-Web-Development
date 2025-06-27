@@ -48,7 +48,7 @@ const cardItemVariants: Variants = {
   hidden: { opacity: 0, y: 50, scale: 0.9 },
   visible: { opacity: 1, y: 0, scale: 1 },
 };
-
+{/* FIXED */}
 const WhyChooseMeSection: React.FC = () => {
   return (
     <motion.section
