@@ -8,11 +8,11 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
 const faqData = [
   {
     question: "Why do I need a website if I already have social media accounts?",
-    answer: "While social media is great for engagement, a **professional website** gives you complete control over your brand, content, and customer data. It's your digital storefront, always open, and isn't subject to changing platform algorithms or policies. A website acts as your central hub, making your business appear more credible and allowing for advanced **SEO strategies** to attract organic traffic directly to your services.",
+    answer: "While social media is great for engagement, a **professional website** gives you complete control over your brand, content, and customer data. It&apos;s your digital storefront, always open, and isn&apos;t subject to changing platform algorithms or policies. A website acts as your central hub, making your business appear more credible and allowing for advanced **SEO strategies** to attract organic traffic directly to your services.",
   },
   {
     question: "I have a traditional brick-and-mortar business. Do I really need a website?",
-    answer: "Absolutely! Even traditional businesses benefit immensely. A website extends your reach beyond your physical location, allowing customers to find you online, view your services, check opening hours, or even book appointments 24/7. It builds trust, provides essential information, and is crucial for **local SEO**, ensuring you appear in 'near me' searches and driving foot traffic to your physical store.",
+    answer: "Absolutely! Even traditional businesses benefit immensely. A website extends your reach beyond your physical location, allowing customers to find you online, view your services, check opening hours, or even book appointments 24/7. It builds trust, provides essential information, and is crucial for **local SEO**, ensuring you appear in &apos;near me&apos; searches and driving foot traffic to your physical store.",
   },
   {
     question: "How can a website help me generate more leads and sales?",
@@ -20,7 +20,7 @@ const faqData = [
   },
   {
     question: "Is investing in a website expensive, and what about maintenance?",
-    answer: "Think of a website as an investment in your business's future, not just an expense. The initial cost varies based on complexity, but the long-term benefits in reach, credibility, and sales often far outweigh it. I focus on delivering **affordable, high-quality solutions** and can guide you through simple maintenance practices or offer ongoing support to ensure your site remains secure, fast, and up-to-date.",
+    answer: "Think of a website as an investment in your business&apos;s future, not just an expense. The initial cost varies based on complexity, but the long-term benefits in reach, credibility, and sales often far outweigh it. I focus on delivering **affordable, high-quality solutions** and can guide you through simple maintenance practices or offer ongoing support to ensure your site remains secure, fast, and up-to-date.",
   },
   {
     question: "My business is unique. Can a website truly capture my brand's essence?",
@@ -32,7 +32,7 @@ const faqData = [
   },
   {
     question: "How does a professional website build trust and credibility for my brand?",
-    answer: "In today's digital age, consumers expect businesses to have a professional online presence. A well-designed website acts as your authoritative hub, showcasing your expertise, testimonials, portfolio, and contact information. This instantly elevates your brand's legitimacy, builds **consumer trust**, and positions you as a reliable and modern business, differentiating you from competitors who only rely on social media.",
+    answer: "In today&apos;s digital age, consumers expect businesses to have a professional online presence. A well-designed website acts as your authoritative hub, showcasing your expertise, testimonials, portfolio, and contact information. This instantly elevates your brand&apos;s legitimacy, builds **consumer trust**, and positions you as a reliable and modern business, differentiating you from competitors who only rely on social media.",
   },
   {
     question: "Can a website really help me understand my customers better?",
@@ -49,7 +49,7 @@ const sectionVariants: Variants = {
     transition: {
       duration: 0.8,
       ease: "easeOut",
-      when: "beforeChildren", 
+      when: "beforeChildren",
       staggerChildren: 0.15
     },
   },
@@ -95,9 +95,9 @@ const CommonDoubtsSection: React.FC = () => {
       id="common-doubts"
       className="py-20 px-4 md:py-24 text-white relative overflow-hidden"
       style={{ backgroundColor: '#0A001A' }}
-      variants={sectionVariants} 
-      initial="hidden"          
-      whileInView="visible"     
+      variants={sectionVariants}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-[#44188c] via-[#3E065F]/20 to-transparent opacity-40 blur-3xl z-0"></div>
@@ -159,9 +159,9 @@ const CommonDoubtsSection: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-12"
         >
-          <p className="text-xl text-gray-200 mb-6">Still got doubts? I'm here to help!</p>
+          <p className="text-xl text-gray-200 mb-6">Still got doubts? I&apos;m here to help!</p> {/* FIXED */}
           <a
-            href="#contact" 
+            href="#contact"
             className="inline-block bg-[#892CDC] text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-[#700B97] transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#892CDC]/50"
           >
             Ask Me Anything!

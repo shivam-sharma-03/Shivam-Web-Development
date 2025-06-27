@@ -18,7 +18,7 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('submitting'); 
+    setStatus('submitting');
 
     // In a real application, you would send this data to your backend API.
     // For now, we'll simulate a successful submission.
@@ -26,9 +26,9 @@ const ContactForm: React.FC = () => {
 
     try {
       // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500)); 
+      await new Promise(resolve => setTimeout(resolve, 1500));
       setStatus('success');
-      setFormData({ name: '', email: '', message: '' }); 
+      setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Form submission error:', error);
       setStatus('error');
@@ -119,7 +119,7 @@ const ContactForm: React.FC = () => {
           animate={{ opacity: 1 }}
           className="text-green-400 mt-4"
         >
-          Message sent successfully! I'll get back to you soon.
+          Message sent successfully! I&apos;ll get back to you soon. {/* FIXED */}
         </motion.p>
       )}
       {status === 'error' && (

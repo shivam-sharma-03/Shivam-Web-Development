@@ -1,5 +1,5 @@
 // components/Footer.tsx
-"use client"; 
+"use client";
 
 import React from 'react';
 import { motion, easeOut } from 'framer-motion';
@@ -24,22 +24,22 @@ const Footer: React.FC = () => {
   return (
     <motion.footer
       className="bg-[#1A0033] text-gray-300 py-12 px-4 border-t border-[#892CDC]/20"
-      variants={footerVariants} 
-      initial="hidden"          
-      whileInView="visible"    
+      variants={footerVariants}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
       <div className="container mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         <div className="flex flex-col items-center md:items-start text-center md:text-left lg:col-span-1">
           <motion.p
             className="text-lg font-semibold text-white mb-2"
-            variants={footerVariants} 
+            variants={footerVariants}
           >
-            Shiv's Portfolio
+            Shivam Web Development
           </motion.p>
           <motion.p
             className="text-sm text-gray-400"
-            variants={footerVariants} 
+            variants={footerVariants}
           >
             &copy; {currentYear} Shiv. All rights reserved.
           </motion.p>
@@ -48,24 +48,24 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center md:items-start text-center md:text-left lg:col-span-1">
           <motion.h3
             className="text-xl font-bold text-white mb-4"
-            variants={footerVariants} 
+            variants={footerVariants}
           >
             About Me
           </motion.h3>
           <ul className="space-y-2 w-full text-left">
-            <motion.li variants={footerVariants}> 
+            <motion.li variants={footerVariants}>
               <Link href="#what-we-do" className="hover:text-[#892CDC] transition-colors">
                 About
               </Link>
             </motion.li>
-           
+
           </ul>
         </div>
 
         <div className="flex flex-col items-center md:items-start text-center md:text-left lg:col-span-1">
           <motion.h3
             className="text-xl font-bold text-white mb-4"
-            variants={footerVariants} 
+            variants={footerVariants}
           >
             Services
           </motion.h3>
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-       
+
         <div className="flex flex-col items-center md:items-start text-center md:text-left lg:col-span-1">
           <motion.h3
             className="text-xl font-bold text-white mb-4"
@@ -135,11 +135,11 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-     
+
         <div className="flex flex-col items-center md:items-start text-center md:text-left lg:col-span-1">
           <motion.h3
             className="text-xl font-bold text-white mb-4"
-            variants={footerVariants} 
+            variants={footerVariants}
           >
             Contact Me
           </motion.h3>
@@ -152,7 +152,7 @@ const Footer: React.FC = () => {
           </ul>
           <div className="flex space-x-6 mt-4 w-full justify-center md:justify-start">
             <motion.a
-              href="https://www.linkedin.com/in/shivam-sharma-8a7618259/" 
+              href="https://www.linkedin.com/in/shivam-sharma-8a7618259/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-[#892CDC] transition-colors"
@@ -162,7 +162,7 @@ const Footer: React.FC = () => {
               <FaLinkedinIn className="text-2xl" />
             </motion.a>
             <motion.a
-              href="https://github.com/shivam-sharma-03" 
+              href="https://github.com/shivam-sharma-03"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-[#892CDC] transition-colors"
@@ -172,7 +172,7 @@ const Footer: React.FC = () => {
               <FaGithub className="text-2xl" />
             </motion.a>
             <motion.a
-              href="mailto:shivamwebdevelopment1@gmail.com" 
+              href="mailto:shivamwebdevelopment1@gmail.com"
               className="text-gray-300 hover:text-[#892CDC] transition-colors"
               variants={socialIconVariants}
               whileHover="hover"

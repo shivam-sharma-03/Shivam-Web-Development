@@ -22,26 +22,28 @@ const HeroSection: React.FC = () => {
   const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
+    const currentRef = sectionRef.current; // Capture the current ref value
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsInView(entry.isIntersecting);
       },
       {
-        rootMargin: '0px', 
+        rootMargin: '0px',
         threshold: 0.05
       }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (currentRef) { // Use the captured value
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) { // Use the captured value in cleanup
+        observer.unobserve(currentRef);
       }
     };
-  }, []);
+  }, []); // The dependency array is now empty as currentRef is stable within the effect
 
   return (
     <section
@@ -56,4 +58,4 @@ const HeroSection: React.FC = () => {
   );
 };
 
-export default HeroSection; 
+export default HeroSection;

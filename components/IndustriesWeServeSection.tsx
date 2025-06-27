@@ -1,5 +1,5 @@
 // components/IndustriesWeServeSection.tsx
-"use client"; 
+"use client";
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -24,7 +24,7 @@ const industriesData = [
     name: 'Creative & Professional Services',
     description: 'Showcasing the unique talents of photographers, artists, consultants, and coaches with elegant, portfolio-driven websites that highlight their expertise and attract ideal clients.',
   },
-  { 
+  {
     id: 'e-commerce-retail',
     image: '/images/p4.jpg',
     name: 'E-commerce & Retail',
@@ -42,11 +42,11 @@ const industriesData = [
     name: 'Tech & Innovation',
     description: 'Providing sleek, performant websites for startups, tech businesses, and innovators to effectively present their cutting-edge solutions and attract investment or early adopters.',
   },
-  { 
+  {
     id: 'other-industries',
-    image: '/images/p7.jpg', 
+    image: '/images/p7.jpg',
     name: 'And Many More...',
-    description: 'My expertise extends to a diverse range of sectors, including jewelry, real estate, event management, and more. Let\'s discuss your unique industry needs!',
+    description: 'My expertise extends to a diverse range of sectors, including jewelry, real estate, event management, and more. Let&apos;s discuss your unique industry needs!', // FIXED
   },
 ];
 
@@ -96,9 +96,9 @@ const IndustriesWeServeSection: React.FC = () => {
       id="industries"
       className="py-12 px-4 md:py-20 text-white relative overflow-hidden flex flex-col items-center min-h-[700px]"
       style={{ backgroundColor: '#0A001A' }}
-      variants={sectionVariants} 
-      initial="hidden"          
-      whileInView="visible"     
+      variants={sectionVariants}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once: true, amount: 0.4 }}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-[#44188c] via-[#3E065F]/30 to-transparent opacity-40 blur-3xl z-0"></div>
@@ -114,7 +114,7 @@ const IndustriesWeServeSection: React.FC = () => {
         <motion.div
           className="w-full relative h-[450px] md:h-[550px] flex justify-center overflow-hidden"
           initial={{ opacity: 0, y: 0 }}
-          whileInView={{ opacity: 1, y:30 }}
+          whileInView={{ opacity: 1, y: 30 }}
           variants={itemVariants}
         >
           {windowWidth > 0 && industriesData.map((industry, index) => {
