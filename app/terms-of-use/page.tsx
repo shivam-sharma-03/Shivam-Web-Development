@@ -5,10 +5,10 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-import NavBar from '@/components/NavBar'; 
+import NavBar from '@/components/NavBar';
 export const metadata = {
-  title: 'Terms of Use - Shiv\'s Portfolio',
-  description: 'Review the terms and conditions for using Shiv\'s Portfolio website.',
+  title: 'Terms of Use - Shivam Web Development', // Updated brand name
+  description: 'Review the terms and conditions for using Shivam Web Development website.', // Updated brand name and escaped apostrophe
 };
 
 async function getTermsOfUseContent() {

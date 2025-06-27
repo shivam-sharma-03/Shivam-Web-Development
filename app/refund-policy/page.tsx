@@ -5,10 +5,10 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-import NavBar from '@/components/NavBar'; 
+import NavBar from '@/components/NavBar';
 export const metadata = {
-  title: 'Refund & Cancellation Policy - Shiv\'s Portfolio',
-  description: 'Review the refund and cancellation policy for services offered by Shiv\'s Portfolio.',
+  title: 'Refund & Cancellation Policy - Shivam Web Development', // Updated brand name
+  description: 'Review the refund and cancellation policy for services offered by Shivam Web Development.', // Updated brand name
 };
 
 async function getRefundPolicyContent() {

@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
             className="text-sm text-gray-400"
             variants={footerVariants}
           >
-            &copy; {currentYear} Shiv. All rights reserved.
+            &copy; {currentYear} Shivam Web Development. All rights reserved.
           </motion.p>
         </div>
 

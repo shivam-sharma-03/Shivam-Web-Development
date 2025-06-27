@@ -43,7 +43,7 @@ const ContactSection: React.FC = () => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6 }}
           >
-            Let&apos;s Build <span className="text-[#892CDC]">Together.</span> {/* FIXED */}
+            Let&apos;s Build <span className="text-[#892CDC]">Together.</span> 
           </motion.h2>
           <motion.p
             className="text-lg md:text-xl font-light text-gray-300"
@@ -52,7 +52,7 @@ const ContactSection: React.FC = () => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Have a project in mind or just want to chat? Fill out the form below and let&apos;s connect! {/* FIXED */}
+            Have a project in mind or just want to chat? Fill out the form below and let&apos;s connect! 
           </motion.p>
         </div>
 

@@ -11,7 +11,7 @@ const DynamicHeroSplineBackground = dynamic(
     ssr: false,
     loading: () => (
       <div className="absolute inset-0 bg-[#0A001A] flex items-center justify-center text-white z-0">
-        <p>Loading 3D background...</p>
+        <p>...</p>
       </div>
     ),
   }
@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
   const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
-    const currentRef = sectionRef.current; // Capture the current ref value
+    const currentRef = sectionRef.current; 
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -34,16 +34,16 @@ const HeroSection: React.FC = () => {
       }
     );
 
-    if (currentRef) { // Use the captured value
+    if (currentRef) { 
       observer.observe(currentRef);
     }
 
     return () => {
-      if (currentRef) { // Use the captured value in cleanup
+      if (currentRef) { 
         observer.unobserve(currentRef);
       }
     };
-  }, []); // The dependency array is now empty as currentRef is stable within the effect
+  }, []); 
 
   return (
     <section

@@ -31,36 +31,36 @@ const WhatWeDoSection: React.FC = () => {
       id="what-we-do"
       className="py-20 px-4 md:py-24 text-white relative overflow-hidden"
       style={{ backgroundColor: '#1A0033' }}
-      variants={sectionVariants} 
-      initial="hidden"          
-      whileInView="visible"     
+      variants={sectionVariants}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once: true, amount: 0.4 }}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-[#1A0033] via-[#3E065F]/30 to-transparent opacity-40 blur-3xl z-0"></div>
 
-     
+
       <div
         className="container mx-auto max-w-6xl relative z-10 p-8 md:p-12 rounded-xl shadow-2xl backdrop-filter backdrop-blur-lg bg-opacity-10"
         style={{
-          backgroundColor: 'rgba(255, 255, 255, 0.05)', 
-          boxShadow: '0 0 15px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.1)', // Glowing white box shadow
-          border: '1px solid rgba(255, 255, 255, 0.3)', 
+          backgroundColor: 'rgba(255, 255, 255, 0.05)',
+          boxShadow: '0 0 15px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.1)', 
+          border: '1px solid rgba(255, 255, 255, 0.3)',
         }}
       >
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16"> 
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           <motion.div className="md:w-1/2 text-center md:text-left" variants={itemVariants}>
             <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
               Elevating Businesses with <span className="text-[#892CDC]">Impactful Websites.</span>
             </h2>
             <p className="text-lg md:text-xl leading-relaxed mb-6">
-                In today's digital landscape, a powerful online presence is non-negotiable. I help small businesses like yours
-                cut through the noise with stunning, highly functional websites designed to
-                **attract, engage, and convert.**
+              In today&apos;s digital landscape, a powerful online presence is non-negotiable. I help small businesses like yours {/* FIXED */}
+              cut through the noise with stunning, highly functional websites designed to
+              **attract, engage, and convert.**
             </p>
             <p className="text-lg md:text-xl leading-relaxed">
-                As a solo web developer, I offer personalized attention, a streamlined process,
-                and a dedication to crafting unique digital experiences that truly reflect your brand
-                and drive your business goals forward.
+              As a solo web developer, I offer personalized attention, a streamlined process,
+              and a dedication to crafting unique digital experiences that truly reflect your brand
+              and drive your business goals forward.
             </p>
           </motion.div>
 

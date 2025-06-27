@@ -10,7 +10,7 @@ const ContactForm: React.FC = () => {
     email: '',
     message: ''
   });
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle'); // Use explicit statuses
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -20,12 +20,10 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     setStatus('submitting');
 
-    // In a real application, you would send this data to your backend API.
-    // For now, we'll simulate a successful submission.
+  
     console.log('Form data submitted:', formData);
 
     try {
-      // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1500));
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
@@ -119,7 +117,7 @@ const ContactForm: React.FC = () => {
           animate={{ opacity: 1 }}
           className="text-green-400 mt-4"
         >
-          Message sent successfully! I&apos;ll get back to you soon. {/* FIXED */}
+          Message sent successfully! I&apos;ll get back to you soon. 
         </motion.p>
       )}
       {status === 'error' && (

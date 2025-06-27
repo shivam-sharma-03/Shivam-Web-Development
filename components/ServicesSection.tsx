@@ -110,7 +110,7 @@ const ServicesSection: React.FC = () => {
               key={service.id}
               id={service.id}
               className="p-8 flex flex-col items-center text-center max-w-sm w-full rounded-lg relative
-                         backdrop-blur-md bg-white/5 border border-white/10 transition-all duration-300" // Replaced glass-effect
+                         backdrop-blur-md bg-white/5 border border-white/10 transition-all duration-300" 
               variants={serviceBlockVariants}
               initial="hidden"
               whileInView="visible"

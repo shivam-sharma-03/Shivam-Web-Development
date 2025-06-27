@@ -46,7 +46,7 @@ const industriesData = [
     id: 'other-industries',
     image: '/images/p7.jpg',
     name: 'And Many More...',
-    description: 'My expertise extends to a diverse range of sectors, including jewelry, real estate, event management, and more. Let&apos;s discuss your unique industry needs!', // FIXED
+    description: 'My expertise extends to a diverse range of sectors, including jewelry, real estate, event management, and more. Let&apos;s discuss your unique industry needs!', 
   },
 ];
 

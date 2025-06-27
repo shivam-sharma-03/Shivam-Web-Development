@@ -3,8 +3,8 @@ import ContactForm from '@/components/ContactForm';
 import NavBar from '@/components/NavBar';
 
 export const metadata = {
-  title: 'Contact Shiv - Get In Touch',
-  description: 'Reach out to Shiv for inquiries, projects, or collaborations. Fill out the contact form to get in touch.',
+  title: 'Contact Shivam Web Development - Get In Touch', // Changed 'Contact Shiv' to 'Contact Shivam Web Development'
+  description: 'Reach out to Shivam Web Development for inquiries, projects, or collaborations. Fill out the contact form to get in touch.', // Fixed unescaped apostrophe and changed 'Shiv' to 'Shivam Web Development'
 };
 
 const ContactPage: React.FC = () => {
@@ -27,9 +27,9 @@ const ContactPage: React.FC = () => {
           </p>
 
           <div
-            className="w-full max-w-lg mx-auto" 
+            className="w-full max-w-lg mx-auto"
           >
-            <ContactForm /> 
+            <ContactForm />
           </div>
 
         </div>

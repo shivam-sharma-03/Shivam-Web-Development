@@ -4,6 +4,7 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Image from 'next/image'; 
 
 const NavBar: React.FC = () => {
 
@@ -11,7 +12,7 @@ const NavBar: React.FC = () => {
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/#services' },
     { name: 'Industries', href: '/#industries' },
-    { name: 'Why Me?', href: '/#why-me' }, // FIXED: The original 'Why Me?' was fine, but in case any other unescaped chars arise, this is the format
+    { name: 'Why Me?', href: '/#why-me' },
     { name: 'Contact me', href: '/contact' },
   ];
 
@@ -42,8 +43,15 @@ const NavBar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2 text-xl font-bold text-[#f8f4fb] hover:text-[#892CDC] transition-colors duration-200">
         <div className="flex items-center space-x-2">
-        <img src="/images/logo.png" alt="Logo" className="h-8 w-8 object-contain" />
-        <span>Shivam Web Development</span> {/* Confirmed: Already correct, no Shiv's Portfolio */}
+        {/* Replaced <img> with <Image /> */}
+        <Image
+          src="/images/logo.png"
+          alt="Logo"
+          width={32} 
+          height={32}
+          className="object-contain" 
+        />
+        <span>Shivam Web Development</span>
         </div>
         </Link>
         <div className="hidden md:flex space-x-8">

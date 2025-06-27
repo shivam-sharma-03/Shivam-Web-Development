@@ -5,11 +5,11 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-import NavBar from '@/components/NavBar'; 
+import NavBar from '@/components/NavBar';
 
 export const metadata = {
-  title: 'Copyright Policy - Shiv\'s Portfolio',
-  description: 'Understand the copyright terms and intellectual property rights for Shiv\'s Portfolio.',
+  title: 'Copyright Policy - Shivam Web Development', // Changed 'Shiv\'s Portfolio' to 'Shivam Web Development'
+  description: 'Understand the copyright terms and intellectual property rights for Shivam Web Development.', // Changed 'Shiv\'s Portfolio' to 'Shivam Web Development' and escaped apostrophe
 };
 
 async function getCopyrightPolicyContent() {

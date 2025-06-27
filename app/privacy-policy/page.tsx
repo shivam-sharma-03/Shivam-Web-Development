@@ -8,8 +8,8 @@ import matter from 'gray-matter';
 import NavBar from '@/components/NavBar';
 
 export const metadata = {
-  title: 'Privacy Policy - Shiv\'s Portfolio',
-  description: 'Understand how Shiv\'s Portfolio collects, uses, and protects your personal data.',
+  title: 'Privacy Policy - Shivam Web Development', // Updated brand name
+  description: 'Understand how Shivam Web Development collects, uses, and protects your personal data.', // Updated brand name and handled apostrophe
 };
 
 async function getPrivacyPolicyContent() {
