@@ -3,8 +3,8 @@ import ContactForm from '@/components/ContactForm';
 import NavBar from '@/components/NavBar';
 
 export const metadata = {
-  title: 'Contact Shivam Web Development - Get In Touch', // Changed 'Contact Shiv' to 'Contact Shivam Web Development'
-  description: 'Reach out to Shivam Web Development for inquiries, projects, or collaborations. Fill out the contact form to get in touch.', // Fixed unescaped apostrophe and changed 'Shiv' to 'Shivam Web Development'
+  title: 'Contact Shivam Web Development - Get In Touch',
+  description: 'Reach out to Shivam Web Development for inquiries, projects, or collaborations. Fill out the contact form to get in touch.',
 };
 
 const ContactPage: React.FC = () => {
@@ -17,13 +17,13 @@ const ContactPage: React.FC = () => {
           <h1
             className="text-4xl md:text-5xl font-extrabold mb-12 leading-tight text-[#f8f4fb]"
           >
-            Let's <span className="text-[#892CDC]">Connect</span>
+            Let&apos;s <span className="text-[#892CDC]">Connect</span> {/* Fixed: Escaped apostrophe in Let's */}
           </h1>
 
           <p
             className="text-gray-300 text-lg md:text-xl mb-12 max-w-2xl mx-auto"
           >
-            Have a project in mind or just want to say hello? Use the form below to send me a message directly.
+            Have a project in mind or just want to say hello? Use the form below to send me a message directly. {/* No unescaped apostrophes here. */}
           </p>
 
           <div
