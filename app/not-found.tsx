@@ -37,7 +37,7 @@ export default function NotFound() {
           className="text-lg md:text-xl text-gray-300 mb-8 max-w-lg mx-auto"
         >
           Oops! The digital route you were navigating seems to have led nowhere.
-          Perhaps it's off getting a cup of coffee and forgot to update its GPS.
+          Perhaps it&apos;s off getting a cup of coffee and forgot to update its GPS.
           Don&apos;t worry, let&apos;s get you back on track.
         </p>
         <div>
