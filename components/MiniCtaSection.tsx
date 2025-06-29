@@ -51,7 +51,7 @@ const MiniCtaSection: React.FC = () => {
           transition={{ delay: 0.2 }}
         >
           <Link
-            href="#contact"
+            href="contact"
             className="inline-block bg-[#892CDC] text-white font-semibold py-3 px-10 rounded-full shadow-lg hover:bg-[#700B97] transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#892CDC]/50 text-lg md:text-xl"
           >
             Get Started Today
