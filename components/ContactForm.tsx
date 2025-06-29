@@ -72,7 +72,7 @@ const ContactForm: React.FC = () => {
         transition={{ duration: 0.5 }}
       >
         <h3 className="text-2xl font-bold mb-4">Message Sent Successfully!</h3>
-        <p>Thank you for reaching out. I'll get back to you soon.</p>
+        <p>Thank you for reaching out. I&apos;ll get back to you soon.</p>
       </motion.div>
     );
   }
@@ -95,7 +95,7 @@ const ContactForm: React.FC = () => {
           id="name"
           type="text"
           name="name"
-          className="shadow appearance-none border border-[#892CDC]/30 rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#892CDC] bg-gray-900/50 text-white placeholder-gray-500"
+          className="shadow appearance-none border border-[#892CDC]/30 rounded-md w-full py-3 px-4 leading-tight focus:outline-none focus:ring-2 focus:ring-[#892CDC] bg-gray-900/50 text-white placeholder-gray-500"
           placeholder="John Doe"
           required
         />
@@ -108,7 +108,7 @@ const ContactForm: React.FC = () => {
           id="email"
           type="email"
           name="email"
-          className="shadow appearance-none border border-[#892CDC]/30 rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#892CDC] bg-gray-900/50 text-white placeholder-gray-500"
+          className="shadow appearance-none border border-[#892CDC]/30 rounded-md w-full py-3 px-4 leading-tight focus:outline-none focus:ring-2 focus:ring-[#892CDC] bg-gray-900/50 text-white placeholder-gray-500"
           placeholder="you@example.com"
           required
         />
@@ -121,7 +121,7 @@ const ContactForm: React.FC = () => {
           id="message"
           name="message"
           rows={6}
-          className="shadow appearance-none border border-[#892CDC]/30 rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#892CDC] bg-gray-900/50 text-white placeholder-gray-500 resize-y"
+          className="shadow appearance-none border border-[#892CDC]/30 rounded-md w-full py-3 px-4 leading-tight focus:outline-none focus:ring-2 focus:ring-[#892CDC] bg-gray-900/50 text-white placeholder-gray-500 resize-y"
           placeholder="Tell me about your project or inquiry..."
           required
         ></textarea>
