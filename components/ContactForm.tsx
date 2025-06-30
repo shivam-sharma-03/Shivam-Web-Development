@@ -3,6 +3,7 @@
 
 import React, { useState, useRef } from 'react';
 import { motion, Variants } from 'framer-motion';
+import Link from 'next/link';
 
 const formVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
@@ -29,7 +30,7 @@ const ContactForm: React.FC = () => {
     setError(null);
 
     const formData = new FormData(event.currentTarget);
-    formData.append("access_key", "6f931491-dfb8-4d8d-b697-9b7de9f20d76");
+    formData.append("access_key", "6f931491-dfb8-4d8d-b697-9b7de9f20d76"); 
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -66,13 +67,20 @@ const ContactForm: React.FC = () => {
   if (submitted) {
     return (
       <motion.div
-        className="text-center p-8 bg-green-500/20 rounded-lg text-green-200"
+        className="text-center p-8 bg-green-500/20 rounded-lg text-green-200 flex flex-col items-center justify-center gap-6"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <h3 className="text-2xl font-bold mb-4">Message Sent Successfully!</h3>
+        <h3 className="text-2xl font-bold mb-2">Message Sent Successfully!</h3>
         <p>Thank you for reaching out. I&apos;ll get back to you soon.</p>
+        
+        <Link
+          href="/"
+          className="inline-block bg-[#892CDC] hover:bg-[#6e22a8] text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 mt-4"
+        >
+          Back to Home
+        </Link>
       </motion.div>
     );
   }

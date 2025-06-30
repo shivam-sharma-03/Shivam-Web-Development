@@ -1,6 +1,7 @@
 // app/contact/page.tsx
 import ContactForm from '@/components/ContactForm';
 import NavBar from '@/components/NavBar';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Contact Shivam Web Development - Get In Touch',
@@ -17,19 +18,28 @@ const ContactPage: React.FC = () => {
           <h1
             className="text-4xl md:text-5xl font-extrabold mb-12 leading-tight text-[#f8f4fb]"
           >
-            Let&apos;s <span className="text-[#892CDC]">Connect</span> {/* Fixed: Escaped apostrophe in Let's */}
+            Let&apos;s <span className="text-[#892CDC]">Connect</span>
           </h1>
 
           <p
             className="text-gray-300 text-lg md:text-xl mb-12 max-w-2xl mx-auto"
           >
-            Have a project in mind or just want to say hello? Use the form below to send me a message directly. {/* No unescaped apostrophes here. */}
+            Have a project in mind or just want to say hello? Use the form below to send me a message directly.
           </p>
 
           <div
             className="w-full max-w-lg mx-auto"
           >
             <ContactForm />
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/"
+              className="inline-block bg-[#892CDC] hover:bg-[#6e22a8] text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Back to Home
+            </Link>
           </div>
 
         </div>
