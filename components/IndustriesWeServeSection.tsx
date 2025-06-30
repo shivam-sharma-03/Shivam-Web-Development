@@ -46,7 +46,7 @@ const industriesData = [
     id: 'other-industries',
     image: '/images/p7.jpg',
     name: 'And Many More...',
-    description: 'My expertise extends to a diverse range of sectors, including jewelry, real estate, event management, and more. Let&apos;s discuss your unique industry needs!', 
+    description: 'My expertise extends to a diverse range of sectors, including jewelry, real estate, event management, and more. Let&apos;s discuss your unique industry needs!',
   },
 ];
 
@@ -64,7 +64,6 @@ const IndustriesWeServeSection: React.FC = () => {
   }, []);
 
   const sectionVariants: Variants = {
-
     hidden: { opacity: 1, y: 0 },
     visible: {
       opacity: 1,
@@ -147,8 +146,8 @@ const IndustriesWeServeSection: React.FC = () => {
                   className="rounded-xl object-cover w-full h-full"
                 />
 
-                <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center p-4 rounded-xl text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute inset-0 backdrop-filter backdrop-blur-sm z-0"></div>
+                {/* MODIFIED: backdrop-filter div REMOVED */}
+                <div className="absolute inset-0 bg-violet-950 bg-opacity-20 lg:bg-opacity-50 flex flex-col items-center justify-center p-4 rounded-xl text-white text-center opacity-65 lg:opacity-0 lg:group-hover:opacity-75 transition-opacity duration-300">
                   <div className="relative z-10 flex flex-col items-center">
                     <h3 className="font-bold text-xl md:text-2xl mb-2 underline underline-offset-4 decoration-[#892CDC]">
                       {industry.name}

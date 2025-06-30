@@ -10,7 +10,6 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   const footerVariants = {
-
     hidden: { opacity: 1, y: 0 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeOut } },
   };
@@ -54,11 +53,10 @@ const Footer: React.FC = () => {
           </motion.h3>
           <ul className="space-y-2 w-full text-left">
             <motion.li variants={footerVariants}>
-              <Link href="#what-we-do" className="hover:text-[#892CDC] transition-colors">
+              <Link href="/#what-we-do" className="hover:text-[#892CDC] transition-colors">
                 About
               </Link>
             </motion.li>
-
           </ul>
         </div>
 
@@ -71,38 +69,37 @@ const Footer: React.FC = () => {
           </motion.h3>
           <ul className="space-y-2 w-full text-left">
             <motion.li variants={footerVariants}>
-              <Link href="#services-redesign" className="hover:text-[#892CDC] transition-colors">
+              <Link href="/#services-redesign" className="hover:text-[#892CDC] transition-colors">
                 Website Redesign
               </Link>
             </motion.li>
             <motion.li variants={footerVariants}>
-              <Link href="#services-creation" className="hover:text-[#892CDC] transition-colors">
+              <Link href="/#services-creation" className="hover:text-[#892CDC] transition-colors">
                 Website Creation
               </Link>
             </motion.li>
             <motion.li variants={footerVariants}>
-              <Link href="#services-logo" className="hover:text-[#892CDC] transition-colors">
+              <Link href="/#services-logo" className="hover:text-[#892CDC] transition-colors">
                 Logo Designing
               </Link>
             </motion.li>
             <motion.li variants={footerVariants}>
-              <Link href="#services-brand" className="hover:text-[#892CDC] transition-colors">
+              <Link href="/#services-brand" className="hover:text-[#892CDC] transition-colors">
                 Brand Designing
               </Link>
             </motion.li>
             <motion.li variants={footerVariants}>
-              <Link href="#services-seo" className="hover:text-[#892CDC] transition-colors">
+              <Link href="/#services-seo" className="hover:text-[#892CDC] transition-colors">
                 SEO Optimization
               </Link>
             </motion.li>
             <motion.li variants={footerVariants}>
-              <Link href="#services-content" className="hover:text-[#892CDC] transition-colors">
+              <Link href="/#services-content" className="hover:text-[#892CDC] transition-colors">
                 Content Writing
               </Link>
             </motion.li>
           </ul>
         </div>
-
 
         <div className="flex flex-col items-center md:items-start text-center md:text-left lg:col-span-1">
           <motion.h3
@@ -135,7 +132,6 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-
         <div className="flex flex-col items-center md:items-start text-center md:text-left lg:col-span-1">
           <motion.h3
             className="text-xl font-bold text-white mb-4"
@@ -145,7 +141,7 @@ const Footer: React.FC = () => {
           </motion.h3>
           <ul className="space-y-2 w-full text-left">
             <motion.li variants={footerVariants}>
-              <Link href="#contact" className="hover:text-[#892CDC] transition-colors">
+              <Link href="/#contact" className="hover:text-[#892CDC] transition-colors">
                 Get in Touch
               </Link>
             </motion.li>
